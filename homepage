@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Acme|Cookie|Gloria+Hallelujah" rel="stylesheet">
+<style>
+.appearance{
+	width:500px;
+    height:200px;
+    background:rgb(255,204,153);
+    font-family:'Acme', sans-serif;
+    font-size:36pt;
+    text-align: center;
+ 	cursor: pointer;
+  	outline: none;
+  	border-radius: 15px;
+    box-shadow: 0 9px #999;
+    }
+.appearance:hover {background-color: rgb(255,179,230)}
+.app2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:36pt;
+  }
+</style>
+</head>
+<body>
+<center>
+<h1 class="app2">Welcome to the Fortune Teller!</h1>
+
+<button type="button" class="appearance"
+onclick="myFunction()">
+What's my fortune?</button>
+</center>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.fontSize = "45px"; 
+    document.getElementById("demo").style.fontFamily = "Cookie,cursive";
+    document.getElementById("demo").style.textAlign = "center";        
+    document.getElementById("demo").innerHTML = "You will die.";
+}
+</script>
+
+
+</body>
+</html> 
