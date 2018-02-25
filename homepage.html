@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Fortune Cookie</title>
+<script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Acme|Cookie|Gloria+Hallelujah" rel="stylesheet">
 <style>
 .appearance{
@@ -29,16 +30,61 @@
 
 <button type="button" class="appearance"
 onclick="myFunction()">
-Click for Your Fortune!</button>
+
+Click for your fortune</button>
 </center>
 <p id="demo"></p>
 
-<script>
+ <script language="javascript">
 function myFunction() {
     document.getElementById("demo").style.fontSize = "45px"; 
     document.getElementById("demo").style.fontFamily = "Cookie,cursive";
     document.getElementById("demo").style.textAlign = "center";        
-    document.getElementById("demo").innerHTML = "The acorn will be bigger than the leaf.";
+    //document.getElementById("demo").innerHTML = "You will die.";
+    
+   
+    //$('p').text("test2");
+  //  $('#demo').css("color","green");
+   
+//document.write("Hi there!")
+var x = Math.random() * 5;
+var y = parseInt(x);
+
+if(y <= 1)
+{
+ $('#demo').text("You will die.");
+}
+
+if(y > 1 && y <=2)
+{
+ $('#demo').text("The juice is worth the squeeze.");
+}
+if(y > 1 && y <=2)
+{
+ $('#demo').text("The acorn will be bigger than the leaf.");
+}
+if(y > 2 && y <=3)
+{
+ $('#demo').text("Beware, the plate has folds in it.");
+}
+if(y > 3 && y <=4)
+{
+ $('#demo').text("Don't be a elephant when you can be a moose.");
+}
+if(y > 4 && y <=5)
+{
+ $('#demo').text("The chair with wheels will beat the chair without.");
+}
+
+if(y > 5 && y <=6)
+{
+ $('#demo').text("");
+}
+
+
+
+
+
 }
 </script>
 
